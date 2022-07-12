@@ -1,0 +1,34 @@
+<canvas id="canvas"></canvas>
+
+<nav>
+    </div>
+    <ul class="nav-list">
+        <li class="n" ><a>Novo post</a></li>
+        <li class="btn">
+            <div class="seta">></div>
+        </li>
+        <li class="g"><a>Gerenciar</a></li>
+    </ul>
+</nav>
+
+<form action="/" method="post" id="form">
+    <div class="container">
+        <label for="titulo">Título do post:</label>
+        <input type="text" name="titulo" id="titulo" placeholder="Título">
+        <label for="texto">Conteúdos do post:</label>
+        <textarea name="texto" id="texto" placeholder="Texto" cols="30" rows="10"></textarea>
+        <input type="submit" value="Publicar" id="publicar">
+    </div>
+</form>
+
+<div id="scrollbar" class="posts">
+    <div id="blur">
+        {{#each posts}}
+            <div class="lorem">
+                <h1 class="text-h1">{{titulo}}</h1>
+                <p class="text-p">{{texto}}</p>
+                <a href="/posts/{{id}}"><button class="del">DELETAR</button></a>
+            </div>
+        {{/each}}
+    </div>
+</div>

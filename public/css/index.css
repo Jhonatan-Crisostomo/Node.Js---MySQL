@@ -1,0 +1,184 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+a {
+    color: #fff;
+    text-decoration: none;
+    opacity: .9;
+    transition: .3s;
+}
+
+body {
+    overflow: hidden;
+    scroll-behavior: smooth;
+}
+
+/* NAVBAR */
+.nav-home {
+    z-index: 9999;
+    width: 100vw;
+    height: 10vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+    background: rgba(0, 102, 255, 0.5);
+    backdrop-filter: blur(15px);
+}
+
+.nav-home li {
+    display: flex;
+    align-items: center;
+}
+
+.logo {
+    font-size: 50px;
+    color: rgba(227, 76, 103, 1);
+    text-transform: uppercase;
+    font-weight: bold;
+    cursor: default;
+    filter: drop-shadow(0 0 0.75rem crimson);
+}
+
+.logo:hover {
+    color: rgba(227, 76, 103, 1);
+}
+
+.home {
+    text-align: center;
+    font-weight: bold;
+    border-radius: 0px 0px 10px 10px;
+    background: rgba(0, 0, 0, 0.5);
+    pointer-events: none;
+}
+
+button {
+    pointer-events: auto;
+    cursor: pointer;
+}
+
+/* POSTS */
+.vh {
+    height: 90vh;
+    top: 10vh;
+}
+
+#scrollbar {
+    width: 100vw;
+    position: relative;
+    overflow-y: scroll;
+    color: rgba(227, 76, 103, 1);
+    background: rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(5px);
+}
+
+#blur {
+    width: 70vw;
+    height: 100vh;
+    margin-left: auto;
+    margin-right: auto;
+    color: #fff;
+}
+
+h1, p {
+    width: 70vw;
+    word-wrap: break-word;
+    padding: 50px;
+}
+
+.text-h1 {
+    text-align: center;
+    filter: drop-shadow(0 0 0.75rem #fff);
+}
+
+.text-p {
+    text-align: justify;
+}
+
+.lorem {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 50vh;
+    padding: 50px;
+    margin: 50px 0px;
+    border-radius: 10px;
+    background: rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(5px);
+    font-size: 20px;
+    border-top: 10px solid #fff;
+}
+
+/* SCROLLBAR - Firefox */
+* {
+    scrollbar-width: auto;
+    scrollbar-color: rgba(227, 76, 103, 0.7);
+}
+
+/* SCROLLBAR - Chrome, Edge, and Safari */
+*::-webkit-scrollbar {
+    width: 10px;
+}
+
+*::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+*::-webkit-scrollbar-thumb {
+    background-color: rgba(227, 76, 103, 0.7);
+    border-radius: 10px;
+    border: none;
+}
+
+@media (max-width: 719px) { 
+    #blur {
+        width: 90vw;
+    }
+    h1, p {
+        width: 90vw;
+        padding: 50px 15px;
+    }
+}
+
+/* FOOTER */
+footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px 10px 0px 0px;
+    background: rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(5px);
+    pointer-events: none;
+}
+
+h2 {
+    animation: color 2s linear infinite;
+    font-size: 30px;
+    padding: 20px;
+    font-weight: bold;
+}
+
+/* KEYFRAMES */
+@keyframes color {
+    0%, 100% {
+        color: #FA7268;
+        filter: drop-shadow(30px 10px 4px #FA7268);
+    }
+    25% {
+        color: #E34C67;
+        filter: drop-shadow(30px 10px 4px #E34C67);
+    }
+    50% {
+        color: #D53867;
+        filter: drop-shadow(30px 10px 4px #D53867);
+    }
+    75% {
+        color: #C62368;
+        filter: drop-shadow(30px 10px 4px #C62368);
+    }
+}

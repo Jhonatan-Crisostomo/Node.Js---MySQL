@@ -1,0 +1,24 @@
+<canvas id="canvas"></canvas>
+
+<nav>
+    <ul class="nav-home">
+        <li><a class="logo">LOGO</a></li>
+    </ul>
+</nav>
+
+<div id="scrollbar" class="vh">
+    <div id="blur">
+        <div class="home">
+            <h1>Seu site sobre o mundo da tecnologia</h1>
+            <p>Inscreva-se na <button>newsletter</button></p>
+        </div>
+        {{#each posts}}
+            <div class="lorem">
+                <h1 class="text-h1">{{titulo}}</h1>
+                <p class="text-p">{{texto}}</p>
+                <small>{{createdAt}}</small>
+            </div>
+        {{/each}}
+        <footer><h2 class="color">By: Jhonatan C.</h2></footer>
+    </div>
+</div>
